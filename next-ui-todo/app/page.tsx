@@ -116,7 +116,9 @@ export default function Home() {
       
       setLoginError("");
       setLoginSuccess(true);
-      router.push("/todo-app");
+      
+      // Redirect to the deployed site
+      window.location.href = "https://next-todo-app-deploy.vercel.app/todo-app";
       return true;
     } catch (error) {
       setLoginError("An unexpected error occurred");
